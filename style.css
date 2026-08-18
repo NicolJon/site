@@ -1,0 +1,360 @@
+:root {
+    --primary-color: #ff7a00;
+    --bg-dark: #000000;
+    --bg-gray-dark: #222222;
+    --bg-gray-light: #f4f4f4;
+    --text-light: #ffffff;
+    --text-dark: #000000;
+    --font-main: 'Montserrat', sans-serif;
+}
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-light);
+    background-color: var(--bg-dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--bg-dark);
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+}
+
+.btn:hover {
+    background-color: #e06b00;
+}
+
+/* Image Placeholders */
+.image-placeholder {
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 0.9rem;
+    overflow: hidden;
+    position: relative;
+}
+
+/* HERO SECTION */
+.hero {
+    background-color: var(--bg-dark);
+    padding: 100px 0;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1400px;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hero-subtitle {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: -10px;
+}
+
+.main-logo {
+    max-width: 100%;
+    height: auto;
+    width: 450px; /* Ajuste o tamanho da logo conforme necessário */
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #e0e0e0;
+    margin-bottom: 40px;
+    line-height: 1.4;
+}
+
+.hero-image-area {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-image {
+    max-width: 100%;
+    max-height: 600px;
+    object-fit: contain;
+}
+
+/* WORKSPACE IMAGE */
+.workspace-image-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-dark);
+}
+
+.workspace-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* ABOUT SECTION */
+.about {
+    background-color: var(--bg-gray-dark);
+    padding: 80px 0;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 0;
+    padding-left: 5%;
+}
+
+.about .section-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.about-text {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.about-text strong {
+    font-weight: 700;
+    color: var(--text-light);
+}
+
+/* CLIENTS SECTION */
+.clients {
+    background-color: var(--bg-gray-light);
+    color: var(--text-dark);
+    padding: 80px 0;
+    text-align: center; /* Centralizando o título */
+}
+
+.clients h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.clients-grid {
+    display: flex;
+    gap: 40px;
+    justify-content: center; /* Centralizando os cards */
+    flex-wrap: wrap;
+}
+
+.client-card {
+    text-align: center;
+}
+
+.client-logo {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    padding: 10px;
+}
+
+.client-logo.bg-black {
+    background-color: #0c0f12; /* Cor escura para combinar com as logos pretas */
+}
+
+.client-logo.bg-white {
+    background-color: #ffffff;
+}
+
+.client-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* TESTIMONIAL SECTION */
+.testimonial {
+    background-color: var(--primary-color);
+    padding: 80px 0;
+    color: var(--bg-dark);
+}
+
+.testimonial-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.testimonial-image-wrapper {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial-image-bg {
+    background-color: #fff;
+    border-radius: 10px 150px 10px 10px;
+    display: inline-block;
+}
+
+.testimonial-image {
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px 150px 10px 10px;
+    mix-blend-mode: luminosity; /* helps blend the black background of hero_man if needed, or remove */
+}
+
+.testimonial-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.testimonial-text h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.testimonial-text p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.testimonial-text h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+/* FOOTER SECTION */
+.footer {
+    background-color: var(--bg-dark);
+    padding: 80px 0;
+}
+
+.footer h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex: 2;
+}
+
+.info-block {
+    min-width: 200px;
+}
+
+.info-block.full-width {
+    width: 100%;
+}
+
+.info-label {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: 5px;
+}
+
+.footer-social {
+    flex: 1;
+    min-width: 200px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+    .brand-pro, .brand-apex {
+        font-size: 3rem;
+    }
+    .hero-content, .testimonial-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text p, .btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .clients-grid {
+        justify-content: center;
+    }
+}
