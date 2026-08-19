@@ -10,37 +10,39 @@
     <link rel="stylesheet" href="style.css">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS CSS for Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
     <!-- HERO SECTION -->
     <section class="hero">
         <div class="container hero-content">
-            <div class="hero-text">
+            <div class="hero-text" data-aos="fade-right">
                 <p class="hero-subtitle">Somos a</p>
                 <img src="assets/logo_proapex.png" alt="Proapex" class="main-logo">
-                <p class="hero-description">Empresa de Aceleramento e Profissionalização:<br>Marketing, gestão e controle.</p>
+                <p class="hero-description">Empresa de Aceleração e Profissionalização:<br>Marketing, gestão e controle.</p>
                 <a href="#portfolio" class="btn">Veja nosso portfólio <i class="fa-solid fa-arrow-right"></i></a>
             </div>
-            <div class="hero-image-area">
-                <img src="assets/hero_man_new.png" alt="Proapex" class="hero-image">
+            <div class="hero-image-area" data-aos="fade-left" data-aos-delay="200">
+                <img src="assets/hero_man_new.png" alt="Proapex" class="hero-image floating-anim">
             </div>
         </div>
     </section>
 
-    <section class="workspace-image-section">
+    <section class="workspace-image-section" data-aos="zoom-in" data-aos-duration="1500">
         <img src="assets/logo_statue.png" alt="Workspace" class="workspace-image">
     </section>
 
     <!-- ABOUT SECTION -->
     <section class="about">
         <div class="container about-container">
-            <h3 class="section-subtitle">O que fazemos</h3>
-            <p class="about-text">
+            <h3 class="section-subtitle" data-aos="fade-up">O que fazemos</h3>
+            <p class="about-text" data-aos="fade-up" data-aos-delay="100">
                 <strong>Atuamos na interseção entre gestão, marketing e posicionamento.</strong> Nosso trabalho é entender empresas por completo, identificar o que limita seu crescimento e transformar isso em estrutura, processos e decisões mais inteligentes.
             </p>
-            <p class="about-text">
-                <strong>Na prática, ajudo empresas a se profissionalizarem.</strong> Organizando operação, estratégia, comunicação, indicadores e posicionamento para crescer com mais clareza, consistência e intenção. É dessa visão que nasce a Pro apex: elevar empresas ao próximo nível.
+            <p class="about-text" data-aos="fade-up" data-aos-delay="200">
+                <strong>Na prática, ajudo empresas a se profissionalizarem.</strong> É dessa visão que nasce a Pro apex: elevar empresas ao próximo nível.
             </p>
         </div>
     </section>
@@ -48,21 +50,41 @@
     <!-- CLIENTS SECTION -->
     <section class="clients" id="portfolio">
         <div class="container">
-            <h2>Tivemos a oportunidade de trabalhar<br>com empresas como essas</h2>
+            <h2 data-aos="fade-up">Nossa história</h2>
             <div class="clients-grid">
-                <div class="client-card">
+                <div class="client-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="client-logo bg-black">
                         <img src="assets/logo_tvativa.png" alt="TV Ativa">
                     </div>
                 </div>
-                <div class="client-card">
+                <div class="client-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="client-logo bg-white">
                         <img src="assets/logo_perpetua.png" alt="Perpétua Lab">
                     </div>
                 </div>
-                <div class="client-card">
+                <div class="client-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="client-logo bg-black">
                         <img src="assets/logo_gratta.jpg" alt="Gratta contábil">
+                    </div>
+                </div>
+                <div class="client-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="client-logo bg-white">
+                        <img src="assets/logo_dcc.jpg" alt="DCC">
+                    </div>
+                </div>
+                <div class="client-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="client-logo bg-black">
+                        <img src="assets/logo_spindola.jpg" alt="Spíndola Cirurgia Plástica">
+                    </div>
+                </div>
+                <div class="client-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="client-logo bg-white">
+                        <img src="assets/logo_ademicon.png" alt="Ademicon">
+                    </div>
+                </div>
+                <div class="client-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="client-logo bg-white">
+                        <img src="assets/logo_ultracaps.jpg" alt="UltraCaps">
                     </div>
                 </div>
             </div>
@@ -72,12 +94,12 @@
     <!-- TESTIMONIAL SECTION -->
     <section class="testimonial">
         <div class="container testimonial-content">
-            <div class="testimonial-image-wrapper">
+            <div class="testimonial-image-wrapper" data-aos="fade-right">
                 <div class="testimonial-image-bg">
                     <img src="assets/hero_man.jpg" alt="João Chicoski" class="testimonial-image">
                 </div>
             </div>
-            <div class="testimonial-text">
+            <div class="testimonial-text" data-aos="fade-left" data-aos-delay="200">
                 <h2>O que meus clientes dizem</h2>
                 <p>Trabalhar com o João é fácil e divertido. Não existem problemas, existem soluções a serem encontradas e desafios a serem superados (e geralmente uma oportunidade para rir kkk), não com teoria ou prática isolados, mas, aplicando os dois e buscando soluções que fazem sentido e trazem eficiência.</p>
                 <h4>Miguel Chicoski</h4>
@@ -87,7 +109,7 @@
 
     <!-- FOOTER SECTION -->
     <footer class="footer">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <h2>Entre em contato</h2>
             <div class="footer-grid">
                 <div class="footer-info">
@@ -117,5 +139,19 @@
         </div>
     </footer>
 
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5544988684100" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
 </body>
 </html>
