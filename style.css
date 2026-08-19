@@ -24,7 +24,11 @@ body {
     color: var(--text-light);
     background-color: var(--bg-dark);
     line-height: 1.6;
-    overflow-x: hidden;
+}
+
+/* Fix for AOS horizontal scroll bug on mobile */
+section, footer {
+    overflow: hidden;
 }
 
 .container {
@@ -409,12 +413,15 @@ body {
     text-align: center;
     font-size: 35px;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-    z-index: 1000;
+    z-index: 9999;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     transition: transform 0.3s ease, background-color 0.3s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    will-change: transform;
 }
 
 .whatsapp-float:hover {
