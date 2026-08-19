@@ -15,13 +15,27 @@
 </head>
 <body>
 
+    <!-- TOP NAVIGATION BAR (Apple Style) -->
+    <nav class="topbar">
+        <div class="topbar-container">
+            <a href="#" class="topbar-logo">
+                <img src="assets/logo_orange_icon.png" alt="Proapex">
+            </a>
+            <ul class="topbar-links">
+                <li><a href="#about">O que fazemos</a></li>
+                <li><a href="#portfolio">Nossa história</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
     <!-- HERO SECTION -->
     <section class="hero">
         <div class="container hero-content">
             <div class="hero-text" data-aos="fade-right">
-                <p class="hero-subtitle">Somos a</p>
-                <img src="assets/logo_proapex.png" alt="Proapex" class="main-logo">
-                <p class="hero-description">Empresa de Aceleração e Profissionalização:<br>Marketing, gestão e controle.</p>
+                <img src="assets/logo_orange_icon.png" alt="Proapex" class="main-logo">
+                <p class="hero-description">Aceleração e profissionalização.</p>
                 <a href="#portfolio" class="btn">Veja nosso portfólio <i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="hero-image-area" data-aos="fade-left" data-aos-delay="200">
@@ -30,20 +44,40 @@
         </div>
     </section>
 
-    <section class="workspace-image-section" data-aos="zoom-in" data-aos-duration="1500">
-        <img src="assets/logo_statue.png" alt="Workspace" class="workspace-image">
-    </section>
 
-    <!-- ABOUT SECTION -->
-    <section class="about">
-        <div class="container about-container">
-            <h3 class="section-subtitle" data-aos="fade-up">O que fazemos</h3>
-            <p class="about-text" data-aos="fade-up" data-aos-delay="100">
-                <strong>Atuamos na interseção entre gestão, marketing e posicionamento.</strong> Nosso trabalho é entender empresas por completo, identificar o que limita seu crescimento e transformar isso em estrutura, processos e decisões mais inteligentes.
-            </p>
-            <p class="about-text" data-aos="fade-up" data-aos-delay="200">
-                <strong>Na prática, ajudo empresas a se profissionalizarem.</strong> É dessa visão que nasce a Pro apex: elevar empresas ao próximo nível.
-            </p>
+
+    <!-- ABOUT SERVICES SECTION -->
+    <section class="about-services" id="about">
+        <div class="container about-services-container" data-aos="fade-up">
+            <div class="about-left">
+                <span class="about-label"><i class="fa-solid fa-chevron-right"></i> O que fazemos</span>
+                <h2 class="about-title">Atuamos na interseção<br>entre<br><strong>gestão, marketing e<br>posicionamento.</strong></h2>
+                <p class="about-desc">Nosso trabalho é entender a empresa por completo, identificar o que limita seu crescimento e transformar isso em estrutura, processos e decisões mais inteligentes.</p>
+                <p class="about-desc">Na prática, ajudamos empresas a se profissionalizarem, com mais clareza, direção e consistência para crescer no próximo nível.</p>
+            </div>
+            <div class="about-right">
+                <div class="service-card" data-aos="fade-left" data-aos-delay="100">
+                    <div class="service-icon"><i class="fa-solid fa-chart-simple"></i></div>
+                    <div class="service-text">
+                        <h3>Gestão</h3>
+                        <p>Estrutura, processos e direção para a operação evoluir com consistência.</p>
+                    </div>
+                </div>
+                <div class="service-card" data-aos="fade-left" data-aos-delay="200">
+                    <div class="service-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                    <div class="service-text">
+                        <h3>Marketing</h3>
+                        <p>Posicionamento, comunicação e estratégia para gerar percepção e demanda.</p>
+                    </div>
+                </div>
+                <div class="service-card" data-aos="fade-left" data-aos-delay="300">
+                    <div class="service-icon"><i class="fa-solid fa-bullseye"></i></div>
+                    <div class="service-text">
+                        <h3>Posicionamento</h3>
+                        <p>Clareza de valor para diferenciar a empresa e sustentar o crescimento.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -101,14 +135,14 @@
             </div>
             <div class="testimonial-text" data-aos="fade-left" data-aos-delay="200">
                 <h2>O que meus clientes dizem</h2>
-                <p>Trabalhar com o João é fácil e divertido. Não existem problemas, existem soluções a serem encontradas e desafios a serem superados (e geralmente uma oportunidade para rir kkk), não com teoria ou prática isolados, mas, aplicando os dois e buscando soluções que fazem sentido e trazem eficiência.</p>
+                <p>"O João é um cara muito inquieto. Ele não consegue simplesmente executar uma coisa porque sempre foi feita daquele jeito. Ele quer entender, questionar, melhorar e encontrar uma forma mais eficiente de fazer.<br><br>Ele tem uma cabeça muito voltada para estratégia, tecnologia e crescimento. Muitas vezes ele enxerga possibilidades antes de todo mundo, principalmente quando envolve marketing, aquisição, IA, automação ou produto."</p>
                 <h4>Miguel Chicoski</h4>
             </div>
         </div>
     </section>
 
     <!-- FOOTER SECTION -->
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <div class="container" data-aos="fade-up">
             <h2>Entre em contato</h2>
             <div class="footer-grid">
@@ -152,6 +186,8 @@
             once: true,
             offset: 100
         });
+
+
     </script>
 </body>
 </html>
